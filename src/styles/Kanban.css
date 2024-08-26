@@ -1,0 +1,38 @@
+.kanban-board {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  padding: 20px;
+  gap: 20px;
+  background: linear-gradient(to right, #e0f7fa, #b9fbc0);
+  max-width: 100%;
+  box-sizing: border-box;
+  overflow-x: hidden;
+}
+
+/* Each Kanban column */
+.kanban-column {
+  background: #ffffff;
+  border-radius: 12px;
+  padding: 20px;
+  width: 320px;
+  min-height: 500px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+  border: 2px solid #ddd;
+  box-sizing: border-box;
+  flex-shrink: 0;
+}
+
+/* Ensure content doesn't exceed container width */
+.content-container > * {
+  flex: 1;
+  max-width: 100%;
+  min-width: 0;
+}
+
+.kanban-board, .task-table {
+  width: 100%;
+  max-width: 100%;
+  overflow-x: hidden;
+  box-sizing: border-box;
+}

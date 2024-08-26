@@ -1,0 +1,42 @@
+Reset default margin and padding for the entire page
+body {
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  overflow-x: hidden; /* Disable horizontal scrolling completely */
+
+}
+
+/* Apply a global box-sizing rule */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+/* Center the entire application */
+.app-container {
+  display: flex;
+
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh; /* Full viewport height */
+  padding: 20px;
+  background-color: #f5f5f5; /* Light background */
+  width: 100%; /* Full width of viewport */
+  overflow-x: hidden; /* Prevent horizontal scroll */
+}
+
+/* Container for KanbanBoard and TaskTable */
+.content-container {
+  display: flex;
+  flex-wrap: wrap; /* Wrap components on smaller screens */
+  gap: 20px; /* Space between KanbanBoard and TaskTable */
+  align-items: flex-start;
+  justify-content: center;
+  width: 100%; /* Full width of the page */
+  max-width: 1200px; /* Limit maximum width */
+  overflow-x: hidden; /* Ensure no horizontal scroll */
+  margin-bottom:20px
+}
