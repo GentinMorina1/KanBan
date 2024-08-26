@@ -11,7 +11,7 @@ const Container = styled('div')({
 });
 
 const TaskList = styled('div')({
-  minHeight: '600px',
+  minHeight: '400px',
   display: 'flex',
   flexDirection: 'column',
   background: '#d7dce8',
