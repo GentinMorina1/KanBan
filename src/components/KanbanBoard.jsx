@@ -202,7 +202,13 @@ const KanbanBoard = ({ tasks, setTasks }) => {
         <Button variant="contained" color="primary" onClick={() => setOpen(true)}>Add New Task</Button>
       </Box>
 
-      <Dialog open={open} onClose={resetForm}>
+      <Dialog open={open} onClose={resetForm} maxWidth="sm" 
+      fullWidth
+      sx={{ 
+        '& .MuiDialog-paper': {
+          overflow: 'hidden', // Prevent horizontal and vertical scrollbars
+        }
+      }} >
         <DialogTitle>
           {editTask ? 'Edit Task' : 'Add Task'}
           <IconButton
