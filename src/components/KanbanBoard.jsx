@@ -49,6 +49,7 @@ const KanbanBoard = ({ tasks, setTasks }) => {
   const [open, setOpen] = useState(false);
   const [editTask, setEditTask] = useState(null);
 
+  
   const handleAddTask = () => {
     if (newTaskDescription.trim() === '' || newTaskDueDate === '') return;
 
